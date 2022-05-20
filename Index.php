@@ -1,6 +1,7 @@
 <?php
 require("connexionProvider.php");
 require("controller/indexController.php");
+IndexController::add();
 $arr = IndexController::index();
 ?>
 
@@ -23,34 +24,34 @@ $arr = IndexController::index();
         <div class="row text-center">
             <h1>Formulaire d'inscription</h1>
         </div>
-        <form method="post">
+        <form action="" method="post">
             <div class="mb-3">
                 <label class="form-label">Prénom</label>
-                <input type="text" class="form-control" id="prenom">
+                <input type="text" class="form-control" id="prenom" name="prenom">
             </div>
             <div class="mb-3">
                 <label class="form-label">Nom</label>
-                <input type="text" class="form-control" id="exampleInputPassword1">
+                <input type="text" class="form-control" id="nom" name="nom">
             </div>
             <div class="mb-3">
                 <label class="form-label">Adresse email</label>
-                <input type="text" class="form-control" id="email">
+                <input type="text" class="form-control" id="email" name="email">
             </div>
             <div class="mb-3">
                 <label class="form-label">Date de naissance</label>
-                <input type="date" class="form-control" id="dateNaissance">
+                <input type="date" class="form-control" id="dateNaissance"  name="dateNaissance">
             </div>
             <div class="mb-3">
                 <label class="form-label">Nom d'utilisateur</label>
-                <input type="text" class="form-control" id="username">
+                <input type="text" class="form-control" id="username"  name="username">
             </div>
             <div class="mb-3">
                 <label class="form-label">Mot de passe</label>
-                <input type="password" class="form-control" id="password">
+                <input type="password" class="form-control" id="password"  name="password">
             </div>
             <div class="mb-3">
                 <label class="form-label">Date d'inscription</label>
-                <input type="date" class="form-control" id="dateInscription">
+                <input type="date" class="form-control" id="dateInscription"  name="dateInscription">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

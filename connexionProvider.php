@@ -2,9 +2,9 @@
 
 class ConnexionProvider{
 public static function getConnexion(){
-    echo "test";
+    // echo "test";
     if(file_exists('./config.xml')){
-        echo "<br>Le fichier existe";
+        // echo "<br>Le fichier existe";
     try {
         $xml = simplexml_load_file('./config.xml');
         $hote = $xml->host;
